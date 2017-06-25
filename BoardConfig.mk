@@ -16,6 +16,9 @@
 
 BOARD_VENDOR := samsung
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := kminiltexx,kminiltedv,kminilteub,kminilte
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
