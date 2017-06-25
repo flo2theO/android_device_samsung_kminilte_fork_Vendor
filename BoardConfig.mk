@@ -61,6 +61,11 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12833521664
 TARGET_KERNEL_CONFIG := kminilte_00_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/kminilte
 
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_kminilte
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/kminilte/init/init_kminilte.cpp
+
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += device/samsung/kminilte
 #TARGET_RECOVERY_FSTAB := device/samsung/kminilte/rootdir/etc/fstab.universal3470
