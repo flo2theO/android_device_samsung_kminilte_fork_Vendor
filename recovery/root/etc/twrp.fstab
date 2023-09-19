@@ -9,4 +9,7 @@
 /modem          emmc        /dev/block/mmcblk0p13
 /preload        ext4        /dev/block/mmcblk0p20
 
+/Vendor         ext4        /dev/block/mmcblk0p22                      flags=backup=0;display="Vendor";wipeingui
+/vendor_image   emmc        /dev/block/mmcblk0p22                      flags=backup=1
+
 /external_sd    auto        /dev/block/mmcblk1p1    /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
